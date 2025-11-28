@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ноутбуки</title>
+		<link rel="icon" href="res/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="page-container">
+			<header class="header-wrapper">
+				<div class="foto">
+					<a href="index.html">
+						<img
+							src="res/logo.png"
+							alt="Nekkis - логотип магазина"
+							width="150"
+						/>
+					</a>
+				</div>
+
+				<div class="zag-search-container">
+					<nav class="main-nav">
+						<div class="nav-item">
+							<a href="#" class="catalog-btn">Каталог товаров</a>
+							<div class="dropdown">
+								<div class="nav-item">
+									<a href="components.html">Комплектующие</a>
+									<div class="sub-dropdown">
+										<a href="components.html#cpu"
+											>Процессоры</a
+										>
+										<a href="components.html#gpu"
+											>Видеокарты</a
+										>
+										<a href="components.html#motherboard"
+											>Материнские платы</a
+										>
+										<a href="components.html#ram"
+											>Оперативная память</a
+										>
+										<a href="components.html#ssd"
+											>SSD накопители</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="computers.html">Компьютеры</a>
+									<div class="sub-dropdown">
+										<a href="computers.html#gaming-pc"
+											>Игровые</a
+										>
+										<a href="computers.html#office-pc"
+											>Офисные</a
+										>
+										<a href="computers.html#professional-pc"
+											>Профессиональные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="laptops.html">Ноутбуки</a>
+									<div class="sub-dropdown">
+										<a href="laptops.html#mobile-lt"
+											>Нетбуки</a
+										>
+										<a href="laptops.html#gaming-lt"
+											>Игровые</a
+										>
+										<a href="laptops.html#desktop-lt"
+											>Стационарные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="peripherals.html">Периферия</a>
+									<div class="sub-dropdown">
+										<a href="peripherals.html#keyboards"
+											>Клавиатуры</a
+										>
+										<a href="peripherals.html#mice">Мыши</a>
+										<a href="peripherals.html#scanners"
+											>Сканеры</a
+										>
+										<a href="peripherals.html#webcams"
+											>Веб-камеры</a
+										>
+										<a href="peripherals.html#monitors"
+											>Мониторы</a
+										>
+										<a href="peripherals.html#headphones"
+											>Наушники</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+					<div class="search-container">
+						<input type="text" placeholder="Поиск товаров..." />
+						<button>Найти</button>
+					</div>
+				</div>
+
+				<div class="cart-container">
+					<a href="cart.html" class="cart-btn">
+						🛒
+						<span class="cart-count">0</span>
+					</a>
+				</div>
+
+				<div class="reg-container">
+					<a href="auth.html#register-section">Регистрация</a>
+				</div>
+
+				<div class="log-container">
+					<a href="auth.html#login-section">Войти</a>
+				</div>
+			</header>
+
+			<main class="main-container">
+				<nav class="breadcrumbs">
+					<a href="index.html">Главная</a> >
+					<a href="laptops.html">Ноутбуки</a> >
+					<span>Все товары</span>
+				</nav>
+
+				<!-- Нетбуки -->
+				<div class="product-section" id="mobile-lt">
+					<h2>Нетбуки</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди нетбуков..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/laptops/netbooks/ASUS E410MA.webp"
+								alt="ASUS E410MA"
+							/>
+							<h3>ASUS E410MA</h3>
+							<div class="specs">
+								<span>Intel Celeron N4020</span>
+								<span>4 ГБ DDR4</span>
+								<span>SSD 128 ГБ</span>
+								<span>14" 1920x1080</span>
+								<span>Windows 11</span>
+							</div>
+							<div class="rating">★★★★☆ 4.1</div>
+							<div class="current-price">
+								<span class="current-price">24 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('netbook1', 'ASUS E410MA')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/netbooks/Lenovo IdeaPad 1 14IGL05.webp"
+								alt="Lenovo IdeaPad 1 14IGL05"
+							/>
+							<h3>Lenovo IdeaPad 1 14IGL05</h3>
+							<div class="specs">
+								<span>Intel Celeron N4020</span>
+								<span>4 ГБ DDR4</span>
+								<span>SSD 128 ГБ</span>
+								<span>14" 1366x768</span>
+								<span>Windows 11</span>
+							</div>
+							<div class="rating">★★★★☆ 4.0</div>
+							<div class="current-price">
+								<span class="current-price">22 499 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('netbook2', 'Lenovo IdeaPad 1 14IGL05')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/netbooks/HP 255 G8.webp"
+								alt="HP 255 G8"
+							/>
+							<h3>HP 255 G8</h3>
+							<div class="specs">
+								<span>AMD 3020e</span>
+								<span>4 ГБ DDR4</span>
+								<span>SSD 256 ГБ</span>
+								<span>15.6" 1366x768</span>
+								<span>Windows 11</span>
+							</div>
+							<div class="rating">★★★★☆ 4.2</div>
+							<div class="current-price">
+								<span class="current-price">26 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('netbook3', 'HP 255 G8')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/netbooks/Acer Aspire 1 A114-33.webp"
+								alt="Acer Aspire 1 A114-33"
+							/>
+							<h3>Acer Aspire 1 A114-33</h3>
+							<div class="specs">
+								<span>Intel Celeron N4500</span>
+								<span>4 ГБ DDR4</span>
+								<span>SSD 128 ГБ</span>
+								<span>14" 1920x1080</span>
+								<span>Windows 11</span>
+							</div>
+							<div class="rating">★★★★☆ 4.3</div>
+							<div class="current-price">
+								<span class="current-price">23 799 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('netbook4', 'Acer Aspire 1 A114-33')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Игровые ноутбуки -->
+				<div class="product-section" id="gaming-lt">
+					<h2>Игровые</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди игровых ноутбуков..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/laptops/gaming/ASUS ROG Strix G15.webp"
+								alt="ASUS ROG Strix G15"
+							/>
+							<h3>ASUS ROG Strix G15</h3>
+							<div class="specs">
+								<span>GeForce RTX 4060</span>
+								<span>AMD Ryzen 7 7840HS</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>15.6" 240Hz</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">149 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-lt1', 'ASUS ROG Strix G15')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/gaming/MSI Katana 15 B13VGK.webp"
+								alt="MSI Katana 15 B13VGK"
+							/>
+							<h3>MSI Katana 15 B13VGK</h3>
+							<div class="specs">
+								<span>GeForce RTX 4070</span>
+								<span>Intel Core i7-13620H</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>15.6" 144Hz</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">179 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-lt2', 'MSI Katana 15 B13VGK')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/gaming/Lenovo Legion 5 Pro 16.webp"
+								alt="Lenovo Legion 5 Pro 16"
+							/>
+							<h3>Lenovo Legion 5 Pro 16</h3>
+							<div class="specs">
+								<span>GeForce RTX 4060</span>
+								<span>AMD Ryzen 7 7745HX</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>16" 165Hz</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">159 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-lt3', 'Lenovo Legion 5 Pro 16')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/gaming/Acer Nitro 5 AN515-46.webp"
+								alt="Acer Nitro 5 AN515-46"
+							/>
+							<h3>Acer Nitro 5 AN515-46</h3>
+							<div class="specs">
+								<span>GeForce RTX 4050</span>
+								<span>AMD Ryzen 5 6600H</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 512 ГБ</span>
+								<span>15.6" 144Hz</span>
+							</div>
+							<div class="rating">★★★★☆ 4.4</div>
+							<div class="current-price">
+								<span class="current-price">99 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-lt4', 'Acer Nitro 5 AN515-46')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Стационарные ноутбуки -->
+				<div class="product-section" id="desktop-lt">
+					<h2>Стационарные</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди стационарных ноутбуков..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/laptops/desktop/Apple MacBook Pro 16 M3 Max.webp"
+								alt="Apple MacBook Pro 16 M3 Max"
+							/>
+							<h3>Apple MacBook Pro 16 M3 Max</h3>
+							<div class="specs">
+								<span>Apple M3 Max</span>
+								<span>48 ГБ RAM</span>
+								<span>SSD 2000 ГБ</span>
+								<span>16.2" Liquid Retina</span>
+								<span>macOS</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">399 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('desktop-lt1', 'Apple MacBook Pro 16 M3 Max')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/desktop/Dell XPS 17 9730.webp"
+								alt="Dell XPS 17 9730"
+							/>
+							<h3>Dell XPS 17 9730</h3>
+							<div class="specs">
+								<span>GeForce RTX 4070</span>
+								<span>Intel Core i9-13900H</span>
+								<span>32 ГБ DDR5</span>
+								<span>SSD 2000 ГБ</span>
+								<span>17" 4K UHD+</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">289 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('desktop-lt2', 'Dell XPS 17 9730')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/desktop/HP Spectre x360 16-f1000.webp"
+								alt="HP Spectre x360 16-f1000"
+							/>
+							<h3>HP Spectre x360 16-f1000</h3>
+							<div class="specs">
+								<span>Intel Arc A370M</span>
+								<span>Intel Core i7-1360P</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>16" OLED 3K</span>
+							</div>
+							<div class="rating">★★★★☆ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">179 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('desktop-lt3', 'HP Spectre x360 16-f1000')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/laptops/desktop/Lenovo ThinkPad P1 Gen 6.webp"
+								alt="Lenovo ThinkPad P1 Gen 6"
+							/>
+							<h3>Lenovo ThinkPad P1 Gen 6</h3>
+							<div class="specs">
+								<span>NVIDIA RTX 2000 Ada</span>
+								<span>Intel Core i7-13800H</span>
+								<span>32 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>16" 4K IPS</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">249 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('desktop-lt4', 'Lenovo ThinkPad P1 Gen 6')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="site-footer">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Контакты</h4>
+						<p>📞 +7 (999) 999-99-99</p>
+						<p>✉️ Nekkis@pc-shop.ru</p>
+						<p>📍 Махачкала</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>График работы</h4>
+						<p>Пн-Пт: 9:00 - 21:00</p>
+						<p>Сб-Вс: 10:00 - 20:00</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>Полезные ссылки</h4>
+						<a href="delivery.html">Доставка</a>
+						<a href="warranty.html">Гарантия</a>
+						<a href="returns.html">Возврат</a>
+						<a href="contacts.html">Контакты</a>
+					</div>
+
+					<div class="footer-section">
+						<h4>Соцсети</h4>
+						<div class="social-links">
+							<a href="#">VK</a>
+							<a href="#">Telegram</a>
+							<a href="#">YouTube</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>© 2025 Nekkis PC-Shop. Все права защищены.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

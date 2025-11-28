@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутентификация</title>
+    <link rel="icon" href="res/favicon.png" />
+    <link rel="stylesheet" href="auth_style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container form-section" id="login-section">
+        <h2>Войдите в учетную запись</h2>
+        <form id="login-form" onsubmit="return validateLogin()">
+            <label for="login-input">Логин:</label>
+            <input type="text" id="login-input" name="login" required>
+
+            <label for="password-input">Пароль:</label>
+            <input type="password" id="password-input" name="password" required>
+
+
+            <button type="submit">Войти</button>
+            <button type="reset">Отменить вход</button>
+        </form>
+    </div>
+
+    <div class="container form-section" id="register-section">
+        <h2> Пройдите регистрацию</h2>
+        <form id="reg-form" onsubmit="return validateRegister()">
+            <label for="login">Логин:</label>
+            <input type="text" id="reg-login" name="login" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="reg-password" name="password" required>
+
+            <label for="email">Почта:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="city">Выберите ваш город</label>
+            <select name="city" id="city">
+                <option value="a">Москва</option>
+                <option value="b">Махачкала</option>
+                <option value="c">Питер</option>
+                <option value="d">Саратов</option>
+
+            </select>
+            </label>
+            <br>
+
+            <br>
+            <legend>Ваш пол</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required> Муж
+                <input type="radio" name="gender" value="female" required> Жен
+            </label>
+
+
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Отменить регистрацию</button>
+        </form>
+    </div>
+</body>
+
+</html>

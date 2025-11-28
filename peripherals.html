@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Периферия</title>
+		<link rel="icon" href="res/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="page-container">
+			<header class="header-wrapper">
+				<div class="foto">
+					<a href="index.html">
+						<img
+							src="res/logo.png"
+							alt="Nekkis - логотип магазина"
+							width="150"
+						/>
+					</a>
+				</div>
+
+				<div class="zag-search-container">
+					<nav class="main-nav">
+						<div class="nav-item">
+							<a href="#" class="catalog-btn">Каталог товаров</a>
+							<div class="dropdown">
+								<div class="nav-item">
+									<a href="components.html">Комплектующие</a>
+									<div class="sub-dropdown">
+										<a href="components.html#cpu"
+											>Процессоры</a
+										>
+										<a href="components.html#gpu"
+											>Видеокарты</a
+										>
+										<a href="components.html#motherboard"
+											>Материнские платы</a
+										>
+										<a href="components.html#ram"
+											>Оперативная память</a
+										>
+										<a href="components.html#ssd"
+											>SSD накопители</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="computers.html">Компьютеры</a>
+									<div class="sub-dropdown">
+										<a href="computers.html#gaming-pc"
+											>Игровые</a
+										>
+										<a href="computers.html#office-pc"
+											>Офисные</a
+										>
+										<a href="computers.html#professional-pc"
+											>Профессиональные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="laptops.html">Ноутбуки</a>
+									<div class="sub-dropdown">
+										<a href="laptops.html#mobile-lt"
+											>Нетбуки</a
+										>
+										<a href="laptops.html#gaming-lt"
+											>Игровые</a
+										>
+										<a href="laptops.html#desktop-lt"
+											>Стационарные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="peripherals.html">Периферия</a>
+									<div class="sub-dropdown">
+										<a href="peripherals.html#keyboards"
+											>Клавиатуры</a
+										>
+										<a href="peripherals.html#mice">Мыши</a>
+										<a href="peripherals.html#scanners"
+											>Сканеры</a
+										>
+										<a href="peripherals.html#webcams"
+											>Веб-камеры</a
+										>
+										<a href="peripherals.html#monitors"
+											>Мониторы</a
+										>
+										<a href="peripherals.html#headphones"
+											>Наушники</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+					<div class="search-container">
+						<input type="text" placeholder="Поиск товаров..." />
+						<button>Найти</button>
+					</div>
+				</div>
+
+				<div class="cart-container">
+					<a href="cart.html" class="cart-btn">
+						🛒
+						<span class="cart-count">0</span>
+					</a>
+				</div>
+
+				<div class="reg-container">
+					<a href="auth.html#register-section">Регистрация</a>
+				</div>
+
+				<div class="log-container">
+					<a href="auth.html#login-section">Войти</a>
+				</div>
+			</header>
+
+			<main class="main-container">
+				<nav class="breadcrumbs">
+					<a href="index.html">Главная</a> >
+					<a href="peripherals.html">Периферия</a> >
+					<span>Все товары</span>
+				</nav>
+
+				<!-- Клавиатуры -->
+				<div class="product-section" id="keyboards">
+					<h2>Клавиатуры</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди клавиатур..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/keyboards/Logitech G915 TKL.webp"
+								alt="Logitech G915 TKL"
+							/>
+							<h3>Logitech G915 TKL</h3>
+							<div class="specs">
+								<span>Механическая</span>
+								<span>Беспроводная</span>
+								<span>RGB подсветка</span>
+								<span>Tenkeyless</span>
+								<span>GL Clicky switches</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">15 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('keyboard1', 'Logitech G915 TKL')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/keyboards/Razer BlackWidow V4 Pro.webp"
+								alt="Razer BlackWidow V4 Pro"
+							/>
+							<h3>Razer BlackWidow V4 Pro</h3>
+							<div class="specs">
+								<span>Механическая</span>
+								<span>Проводная</span>
+								<span>Razer Chroma RGB</span>
+								<span>Full-size</span>
+								<span>Green switches</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">18 499 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('keyboard2', 'Razer BlackWidow V4 Pro')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/keyboards/SteelSeries Apex Pro TKL.webp"
+								alt="SteelSeries Apex Pro TKL"
+							/>
+							<h3>SteelSeries Apex Pro TKL</h3>
+							<div class="specs">
+								<span>Механическая</span>
+								<span>Проводная</span>
+								<span>RGB подсветка</span>
+								<span>Tenkeyless</span>
+								<span>OmniPoint 2.0</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">16 799 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('keyboard3', 'SteelSeries Apex Pro TKL')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/keyboards/HyperX Alloy Origins Core.webp"
+								alt="HyperX Alloy Origins Core"
+							/>
+							<h3>HyperX Alloy Origins Core</h3>
+							<div class="specs">
+								<span>Механическая</span>
+								<span>Проводная</span>
+								<span>RGB подсветка</span>
+								<span>Tenkeyless</span>
+								<span>HyperX Red switches</span>
+							</div>
+							<div class="rating">★★★★☆ 4.5</div>
+							<div class="current-price">
+								<span class="current-price">9 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('keyboard4', 'HyperX Alloy Origins Core')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Мыши -->
+				<div class="product-section" id="mice">
+					<h2>Мыши</h2>
+
+					<div class="section-search">
+						<input type="text" placeholder="Поиск среди мышей..." />
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/mice/Logitech G Pro X Superlight.webp"
+								alt="Logitech G Pro X Superlight"
+							/>
+							<h3>Logitech G Pro X Superlight</h3>
+							<div class="specs">
+								<span>Беспроводная</span>
+								<span>25K DPI</span>
+								<span>63g вес</span>
+								<span>70 часов работы</span>
+								<span>HERO 25K сенсор</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">12 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('mouse1', 'Logitech G Pro X Superlight')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/mice/Razer DeathAdder V3 Pro.webp"
+								alt="Razer DeathAdder V3 Pro"
+							/>
+							<h3>Razer DeathAdder V3 Pro</h3>
+							<div class="specs">
+								<span>Беспроводная</span>
+								<span>30K DPI</span>
+								<span>58g вес</span>
+								<span>90 часов работы</span>
+								<span>Focus Pro 30K</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">13 499 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('mouse2', 'Razer DeathAdder V3 Pro')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/mice/SteelSeries Rival 3 Wireless.webp"
+								alt="SteelSeries Rival 3 Wireless"
+							/>
+							<h3>SteelSeries Rival 3 Wireless</h3>
+							<div class="specs">
+								<span>Беспроводная</span>
+								<span>18K DPI</span>
+								<span>106g вес</span>
+								<span>400+ часов работы</span>
+								<span>TrueMove Core</span>
+							</div>
+							<div class="rating">★★★★☆ 4.4</div>
+							<div class="current-price">
+								<span class="current-price">5 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('mouse3', 'SteelSeries Rival 3 Wireless')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/mice/HyperX Pulsefire Haste Wireless.webp"
+								alt="HyperX Pulsefire Haste Wireless"
+							/>
+							<h3>HyperX Pulsefire Haste Wireless</h3>
+							<div class="specs">
+								<span>Беспроводная</span>
+								<span>16K DPI</span>
+								<span>61g вес</span>
+								<span>100 часов работы</span>
+								<span>PixArt 3335</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">7 499 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('mouse4', 'HyperX Pulsefire Haste Wireless')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Сканеры -->
+				<div class="product-section" id="scanners">
+					<h2>Сканеры</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди сканеров..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/scanners/Epson Perfection V600.webp"
+								alt="Epson Perfection V600"
+							/>
+							<h3>Epson Perfection V600</h3>
+							<div class="specs">
+								<span>6400 x 9600 dpi</span>
+								<span>Планшетный</span>
+								<span>USB 2.0</span>
+								<span>Слайд-адаптер</span>
+								<span>Цветное сканирование</span>
+							</div>
+							<div class="rating">★★★★☆ 4.3</div>
+							<div class="current-price">
+								<span class="current-price">24 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('scanner1', 'Epson Perfection V600')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/scanners/Canon CanoScan 9000F Mark II.webp"
+								alt="Canon CanoScan 9000F Mark II"
+							/>
+							<h3>Canon CanoScan 9000F Mark II</h3>
+							<div class="specs">
+								<span>9600 x 9600 dpi</span>
+								<span>Планшетный</span>
+								<span>USB 2.0</span>
+								<span>Слайд-адаптер</span>
+								<span>48-битный цвет</span>
+							</div>
+							<div class="rating">★★★★☆ 4.5</div>
+							<div class="current-price">
+								<span class="current-price">19 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('scanner2', 'Canon CanoScan 9000F Mark II')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/scanners/Brother ADS-2700W.webp"
+								alt="Brother ADS-2700W"
+							/>
+							<h3>Brother ADS-2700W</h3>
+							<div class="specs">
+								<span>600 x 600 dpi</span>
+								<span>Автоподатчик</span>
+								<span>Wi-Fi</span>
+								<span>20 стр/мин</span>
+								<span>Дуплексное сканирование</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">34 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('scanner3', 'Brother ADS-2700W')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/scanners/Fujitsu ScanSnap iX1600.webp"
+								alt="Fujitsu ScanSnap iX1600"
+							/>
+							<h3>Fujitsu ScanSnap iX1600</h3>
+							<div class="specs">
+								<span>600 x 600 dpi</span>
+								<span>Автоподатчик</span>
+								<span>Wi-Fi</span>
+								<span>40 стр/мин</span>
+								<span>Сенсорный экран</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">49 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('scanner4', 'Fujitsu ScanSnap iX1600')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Веб-камеры -->
+				<div class="product-section" id="webcams">
+					<h2>Веб-камеры</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди веб-камер..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/webcams/Logitech Brio 4K.webp"
+								alt="Logitech Brio 4K"
+							/>
+							<h3>Logitech Brio 4K</h3>
+							<div class="specs">
+								<span>4K Ultra HD</span>
+								<span>HDR</span>
+								<span>Автофокус</span>
+								<span>Шумоподавление</span>
+								<span>Windows Hello</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">14 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('webcam1', 'Logitech Brio 4K')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/webcams/Razer Kiyo Pro Ultra.webp"
+								alt="Razer Kiyo Pro Ultra"
+							/>
+							<h3>Razer Kiyo Pro Ultra</h3>
+							<div class="specs">
+								<span>4K 30fps</span>
+								<span>Сенсор Sony STARVIS 2</span>
+								<span>HDR</span>
+								<span>Adaptive Light Sensor</span>
+								<span>USB-C</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">19 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('webcam2', 'Razer Kiyo Pro Ultra')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/webcams/Insta360 Link.webp"
+								alt="Insta360 Link"
+							/>
+							<h3>Insta360 Link</h3>
+							<div class="specs">
+								<span>4K 30fps</span>
+								<span>AI-трекер</span>
+								<span>Гистограммный режим</span>
+								<span>USB-C</span>
+								<span>Датчик жестов</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">24 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('webcam3', 'Insta360 Link')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/webcams/Elgato Facecam.webp"
+								alt="Elgato Facecam"
+							/>
+							<h3>Elgato Facecam</h3>
+							<div class="specs">
+								<span>1080p 60fps</span>
+								<span>Сенсор Sony</span>
+								<span>f/2.4 объектив</span>
+								<span>Фокус 82°</span>
+								<span>Неподвижный фокус</span>
+							</div>
+							<div class="rating">★★★★☆ 4.5</div>
+							<div class="current-price">
+								<span class="current-price">16 499 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('webcam4', 'Elgato Facecam')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Мониторы -->
+				<div class="product-section" id="monitors">
+					<h2>Мониторы</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди мониторов..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/monitors/Samsung Odyssey G9.webp"
+								alt="Samsung Odyssey G9"
+							/>
+							<h3>Samsung Odyssey G9</h3>
+							<div class="specs">
+								<span>49" 5120x1440</span>
+								<span>240Hz</span>
+								<span>QLED</span>
+								<span>1ms</span>
+								<span>HDR1000</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">129 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('monitor1', 'Samsung Odyssey G9')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/monitors/LG UltraGear 27GP850-B.webp"
+								alt="LG UltraGear 27GP850-B"
+							/>
+							<h3>LG UltraGear 27GP850-B</h3>
+							<div class="specs">
+								<span>27" 2560x1440</span>
+								<span>180Hz</span>
+								<span>Nano IPS</span>
+								<span>1ms</span>
+								<span>HDR400</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">44 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('monitor2', 'LG UltraGear 27GP850-B')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/monitors/Dell Alienware AW3423DW.webp"
+								alt="Dell Alienware AW3423DW"
+							/>
+							<h3>Dell Alienware AW3423DW</h3>
+							<div class="specs">
+								<span>34" 3440x1440</span>
+								<span>175Hz</span>
+								<span>QD-OLED</span>
+								<span>0.1ms</span>
+								<span>HDR True Black 400</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">99 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('monitor3', 'Dell Alienware AW3423DW')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/monitors/ASUS ROG Swift PG32UQXR.webp"
+								alt="ASUS ROG Swift PG32UQXR"
+							/>
+							<h3>ASUS ROG Swift PG32UQXR</h3>
+							<div class="specs">
+								<span>32" 3840x2160</span>
+								<span>160Hz</span>
+								<span>Mini-LED</span>
+								<span>1ms</span>
+								<span>HDR1400</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">149 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('monitor4', 'ASUS ROG Swift PG32UQXR')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Наушники -->
+				<div class="product-section" id="headphones">
+					<h2>Наушники</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди наушников..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/peripherals/headphones/Sony WH-1000XM5.webp"
+								alt="Sony WH-1000XM5"
+							/>
+							<h3>Sony WH-1000XM5</h3>
+							<div class="specs">
+								<span>Беспроводные</span>
+								<span>Шумоподавление</span>
+								<span>30 часов работы</span>
+								<span>Касания</span>
+								<span>HD Noise Canceling</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">34 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('headphone1', 'Sony WH-1000XM5')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/headphones/Bose QuietComfort Ultra.webp"
+								alt="Bose QuietComfort Ultra"
+							/>
+							<h3>Bose QuietComfort Ultra</h3>
+							<div class="specs">
+								<span>Беспроводные</span>
+								<span>Пространственный звук</span>
+								<span>24 часа работы</span>
+								<span>Касания</span>
+								<span>CustomTune технология</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">39 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('headphone2', 'Bose QuietComfort Ultra')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/headphones/Sennheiser HD 660S2.webp"
+								alt="Sennheiser HD 660S2"
+							/>
+							<h3>Sennheiser HD 660S2</h3>
+							<div class="specs">
+								<span>Проводные</span>
+								<span>Открытые</span>
+								<span>300 Ом</span>
+								<span>Hi-Res Audio</span>
+								<span>Нейодимовые динамики</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">49 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('headphone3', 'Sennheiser HD 660S2')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/peripherals/headphones/SteelSeries Arctis Nova Pro Wireless.webp"
+								alt="SteelSeries Arctis Nova Pro Wireless"
+							/>
+							<h3>SteelSeries Arctis Nova Pro Wireless</h3>
+							<div class="specs">
+								<span>Беспроводные</span>
+								<span>Двойной источник</span>
+								<span>Беспроводная база</span>
+								<span>Active Noise Cancellation</span>
+								<span>360° пространственный звук</span>
+							</div>
+							<div class="rating">★★★★☆ 4.6</div>
+							<div class="current-price">
+								<span class="current-price">29 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('headphone4', 'SteelSeries Arctis Nova Pro Wireless')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="site-footer">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Контакты</h4>
+						<p>📞 +7 (999) 999-99-99</p>
+						<p>✉️ Nekkis@pc-shop.ru</p>
+						<p>📍 Махачкала</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>График работы</h4>
+						<p>Пн-Пт: 9:00 - 21:00</p>
+						<p>Сб-Вс: 10:00 - 20:00</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>Полезные ссылки</h4>
+						<a href="delivery.html">Доставка</a>
+						<a href="warranty.html">Гарантия</a>
+						<a href="returns.html">Возврат</a>
+						<a href="contacts.html">Контакты</a>
+					</div>
+
+					<div class="footer-section">
+						<h4>Соцсети</h4>
+						<div class="social-links">
+							<a href="#">VK</a>
+							<a href="#">Telegram</a>
+							<a href="#">YouTube</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>© 2025 Nekkis PC-Shop. Все права защищены.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

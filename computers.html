@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Компьютеры</title>
+		<link rel="icon" href="res/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="page-container">
+			<header class="header-wrapper">
+				<div class="foto">
+					<a href="index.html">
+						<img
+							src="res/logo.png"
+							alt="Nekkis - логотип магазина"
+							width="150"
+						/>
+					</a>
+				</div>
+
+				<div class="zag-search-container">
+					<nav class="main-nav">
+						<div class="nav-item">
+							<a href="#" class="catalog-btn">Каталог товаров</a>
+							<div class="dropdown">
+								<div class="nav-item">
+									<a href="components.html">Комплектующие</a>
+									<div class="sub-dropdown">
+										<a href="components.html#cpu"
+											>Процессоры</a
+										>
+										<a href="components.html#gpu"
+											>Видеокарты</a
+										>
+										<a href="components.html#motherboard"
+											>Материнские платы</a
+										>
+										<a href="components.html#ram"
+											>Оперативная память</a
+										>
+										<a href="components.html#ssd"
+											>SSD накопители</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="computers.html">Компьютеры</a>
+									<div class="sub-dropdown">
+										<a href="computers.html#gaming-pc"
+											>Игровые</a
+										>
+										<a href="computers.html#office-pc"
+											>Офисные</a
+										>
+										<a href="computers.html#professional-pc"
+											>Профессиональные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="laptops.html">Ноутбуки</a>
+									<div class="sub-dropdown">
+										<a href="laptops.html#mobile-lt"
+											>Нетбуки</a
+										>
+										<a href="laptops.html#gaming-lt"
+											>Игровые</a
+										>
+										<a href="laptops.html#desktop-lt"
+											>Стационарные</a
+										>
+									</div>
+								</div>
+
+								<div class="nav-item">
+									<a href="peripherals.html">Периферия</a>
+									<div class="sub-dropdown">
+										<a href="peripherals.html#keyboards"
+											>Клавиатуры</a
+										>
+										<a href="peripherals.html#mice">Мыши</a>
+										<a href="peripherals.html#scanners"
+											>Сканеры</a
+										>
+										<a href="peripherals.html#webcams"
+											>Веб-камеры</a
+										>
+										<a href="peripherals.html#monitors"
+											>Мониторы</a
+										>
+										<a href="peripherals.html#headphones"
+											>Наушники</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+					<div class="search-container">
+						<input type="text" placeholder="Поиск товаров..." />
+						<button>Найти</button>
+					</div>
+				</div>
+
+				<div class="cart-container">
+					<a href="cart.html" class="cart-btn">
+						🛒
+						<span class="cart-count">0</span>
+					</a>
+				</div>
+
+				<div class="reg-container">
+					<a href="auth.html#register-section">Регистрация</a>
+				</div>
+
+				<div class="log-container">
+					<a href="auth.html#login-section">Войти</a>
+				</div>
+			</header>
+
+			<main class="main-container">
+				<nav class="breadcrumbs">
+					<a href="index.html">Главная</a> >
+					<a href="computers.html">Компьютеры</a> >
+					<span>Все товары</span>
+				</nav>
+				<!-- Игровые -->
+				<div class="product-section" id="gaming-pc">
+					<h2>Игровые</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди игровых пк..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/computers/gaming-pc/MSI MAG Infinite S3.webp"
+								alt="MSI MAG Infinite S3"
+							/>
+							<h3>MSI MAG Infinite S3</h3>
+							<div class="specs">
+								<span>GeForce RTX 4060</span>
+								<span>Intel Core i5-14400F</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>6 ядер x 2.5 ГГц</span>
+							</div>
+							<div class="rating">★★★★☆ 4.2</div>
+							<div class="current-price">
+								<span class="current-price">107 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-pc1', 'MSI MAG Infinite S3')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/gaming-pc/ASUS T500MV-13420H1520.webp"
+								alt="ASUS T500MV-13420H1520"
+							/>
+							<h3>ASUS T500MV-13420H1520</h3>
+							<div class="specs">
+								<span>GeForce RTX 5060 Ti</span>
+								<span>Intel Core i5-13420H</span>
+								<span>16 ГБ DDR5</span>
+								<span>SSD 1000 ГБ</span>
+								<span>4 ядра x 2.1 ГГц</span>
+							</div>
+							<div class="rating">★★★★☆ 3.9</div>
+							<div class="current-price">
+								<span class="current-price">80 299 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-pc2', 'ASUS T500MV-13420H1520')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/gaming-pc/ARDOR GAMING NEO M143.webp"
+								alt="ARDOR GAMING NEO M143"
+							/>
+							<h3>ARDOR GAMING NEO M143</h3>
+							<div class="specs">
+								<span>GeForce RTX 3050</span>
+								<span>Intel Core i5-12400F</span>
+								<span>16 ГБ DDR4</span>
+								<span>SSD 1000 ГБ</span>
+								<span>6 ядер x 2.5 ГГц</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">67 299 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-pc3', 'ARDOR GAMING NEO M143')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/gaming-pc/DEXP Mars G007.webp"
+								alt="DEXP Mars G007"
+							/>
+							<h3>DEXP Mars G007</h3>
+							<div class="specs">
+								<span>GeForce RTX 3050</span>
+								<span>Intel Core i3-12100F</span>
+								<span>16 ГБ DDR4</span>
+								<span>SSD 500 ГБ</span>
+								<span>4 ядра x 3.3 ГГц</span>
+							</div>
+							<div class="rating">★★★★★ 4.93</div>
+							<div class="current-price">
+								<span class="current-price">51 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('gaming-pc4', 'DEXP Mars G007')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- офисные -->
+				<div class="product-section" id="office-pc">
+					<h2>Офисные</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди офисных пк..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/computers/office-pc/Huawei MateStation B515.webp"
+								alt="Huawei MateStation B515"
+							/>
+							<h3>Huawei MateStation B515</h3>
+							<div class="specs">
+								<span>AMD Ryzen 5 4600G</span>
+								<span>RAM 8GB DDR4</span>
+								<span>SSD 256 GB</span>
+								<span>6 ядер × 3.7 GHz</span>
+							</div>
+							<div class="rating">★★★★☆ 4.3</div>
+							<div class="current-price">
+								<span class="current-price">49 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('office-pc1', 'Huawei MateStation B515')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/office-pc/Dell Optiplex 3080S.webp"
+								alt="Dell Optiplex 3080S"
+							/>
+							<h3>Dell Optiplex 3080S</h3>
+							<div class="specs">
+								<span>Intel Core i3-10100T</span>
+								<span>RAM 8GB DDR4</span>
+								<span>SSD 256 GB</span>
+								<span>4 ядра × 3.6 GHz</span>
+							</div>
+							<div class="rating">★★★★★ 4.7</div>
+							<div class="current-price">
+								<span class="current-price">39 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('office-pc2', 'Dell Optiplex 3080S')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/office-pc/Acer Veriton VZ2860.webp"
+								alt="Acer Veriton VZ2860"
+							/>
+							<h3>Acer Veriton VZ2860</h3>
+							<div class="specs">
+								<span>Intel Pentium Gold G6400</span>
+								<span>RAM 8GB DDR4</span>
+								<span>SSD 256 GB</span>
+								<span>2 ядра × 4.1 GHz</span>
+							</div>
+							<div class="rating">★★★★☆ 4.2</div>
+							<div class="current-price">
+								<span class="current-price">34 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('office-pc3', 'Acer Veriton VZ2860')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- профессиональные -->
+				<div class="product-section" id="professional-pc">
+					<h2>Профессиональные</h2>
+
+					<div class="section-search">
+						<input
+							type="text"
+							placeholder="Поиск среди профессиональных пк..."
+						/>
+						<button>Найти</button>
+					</div>
+
+					<div class="product-grid">
+						<div class="product-card">
+							<img
+								src="res/computers/professional-pc/HP Z2 Mini G4.webp"
+								alt="HP Z2 Mini G4"
+							/>
+							<h3>HP Z2 Mini G4</h3>
+							<div class="specs">
+								<span>Intel Xeon E-2276G</span>
+								<span>RAM 32GB DDR4</span>
+								<span>SSD 512 GB</span>
+								<span>6 ядер × 3.8 GHz</span>
+							</div>
+							<div class="rating">★★★★★ 4.9</div>
+							<div class="current-price">
+								<span class="current-price">129 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('professional-pc1', 'HP Z2 Mini G4')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/professional-pc/Lenovo ThinkCentre M720q Tiny.webp"
+								alt="Lenovo ThinkCentre M720q Tiny"
+							/>
+							<h3>Lenovo ThinkCentre M720q Tiny</h3>
+							<div class="specs">
+								<span>Intel Core i7-9700</span>
+								<span>RAM 16GB DDR4</span>
+								<span>SSD 512 GB</span>
+								<span>8 ядер × 3.0 GHz</span>
+							</div>
+							<div class="rating">★★★★☆ 4.5</div>
+							<div class="current-price">
+								<span class="current-price">99 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('professional-pc2', 'Lenovo ThinkCentre M720q Tiny')"
+							>
+								В корзину
+							</button>
+						</div>
+
+						<div class="product-card">
+							<img
+								src="res/computers/professional-pc/Dell Precision 3430 Tower.webp"
+								alt="Dell Precision 3430 Tower"
+							/>
+							<h3>Dell Precision 3430 Tower</h3>
+							<div class="specs">
+								<span>Intel Xeon W-1250</span>
+								<span>RAM 32GB DDR4</span>
+								<span>SSD 1 TB</span>
+								<span>5 ядер × 3.8 GHz</span>
+							</div>
+							<div class="rating">★★★★★ 4.8</div>
+							<div class="current-price">
+								<span class="current-price">149 999 ₽</span>
+							</div>
+							<button
+								class="product-buy"
+								onclick="buyCommand('professional-pc3', 'Dell Precision 3430 Tower')"
+							>
+								В корзину
+							</button>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="site-footer">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Контакты</h4>
+						<p>📞 +7 (999) 999-99-99</p>
+						<p>✉️ Nekkis@pc-shop.ru</p>
+						<p>📍 Махачкала</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>График работы</h4>
+						<p>Пн-Пт: 9:00 - 21:00</p>
+						<p>Сб-Вс: 10:00 - 20:00</p>
+					</div>
+
+					<div class="footer-section">
+						<h4>Полезные ссылки</h4>
+						<a href="delivery.html">Доставка</a>
+						<a href="warranty.html">Гарантия</a>
+						<a href="returns.html">Возврат</a>
+						<a href="contacts.html">Контакты</a>
+					</div>
+
+					<div class="footer-section">
+						<h4>Соцсети</h4>
+						<div class="social-links">
+							<a href="#">VK</a>
+							<a href="#">Telegram</a>
+							<a href="#">YouTube</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>© 2025 Nekkis PC-Shop. Все права защищены.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

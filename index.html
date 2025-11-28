@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nekkis - Магазин компьютерных комплектующих</title>
+		<link rel="icon" href="res/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<header class="header-wrapper">
+			<div class="foto">
+				<a href="index.html">
+					<img
+						src="res/logo.png"
+						alt="Nekkis - логотип магазина"
+						width="150"
+					/>
+				</a>
+			</div>
+
+			<div class="zag-search-container">
+				<nav class="main-nav">
+					<div class="nav-item">
+						<a href="#" class="catalog-btn">Каталог товаров</a>
+						<div class="dropdown">
+							<div class="nav-item">
+								<a href="components.html">Комплектующие</a>
+								<div class="sub-dropdown">
+									<a href="components.html#cpu">Процессоры</a>
+									<a href="components.html#gpu">Видеокарты</a>
+									<a href="components.html#motherboard"
+										>Материнские платы</a
+									>
+									<a href="components.html#ram"
+										>Оперативная память</a
+									>
+									<a href="components.html#ssd"
+										>SSD накопители</a
+									>
+								</div>
+							</div>
+
+							<div class="nav-item">
+								<a href="computers.html">Компьютеры</a>
+								<div class="sub-dropdown">
+									<a href="computers.html#gaming-pc"
+										>Игровые</a
+									>
+									<a href="computers.html#office-pc"
+										>Офисные</a
+									>
+									<a href="computers.html#professional-pc"
+										>Профессиональные</a
+									>
+								</div>
+							</div>
+
+							<div class="nav-item">
+								<a href="laptops.html">Ноутбуки</a>
+								<div class="sub-dropdown">
+									<a href="laptops.html#mobile-lt">Нетбуки</a>
+									<a href="laptops.html#gaming-lt">Игровые</a>
+									<a href="laptops.html#desktop-lt"
+										>Стационарные</a
+									>
+								</div>
+							</div>
+
+							<div class="nav-item">
+								<a href="peripherals.html">Периферия</a>
+								<div class="sub-dropdown">
+									<a href="peripherals.html#keyboards"
+										>Клавиатуры</a
+									>
+									<a href="peripherals.html#mice">Мыши</a>
+									<a href="peripherals.html#scanners"
+										>Сканеры</a
+									>
+									<a href="peripherals.html#webcams"
+										>Веб-камеры</a
+									>
+									<a href="peripherals.html#monitors"
+										>Мониторы</a
+									>
+									<a href="peripherals.html#headphones"
+										>Наушники</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<div class="search-container">
+					<input type="text" placeholder="Поиск товаров..." />
+					<button>Найти</button>
+				</div>
+			</div>
+
+			<div class="cart-container">
+				<a href="cart.html" class="cart-btn">
+					🛒
+					<span class="cart-count">0</span>
+				</a>
+			</div>
+
+			<div class="reg-container">
+				<a href="auth.html#register-section">Регистрация</a>
+			</div>
+
+			<div class="log-container">
+				<a href="auth.html#login-section">Войти</a>
+			</div>
+		</header>
+
+		<main class="main-container">
+			<div class="novelties-section">
+				<h2>Новинки</h2>
+				<div class="novelties-grid">
+					<div class="novelty-card">
+						<div class="discount">NEW</div>
+						<h3>RTX 5090</h3>
+						<p>Новейшая игровая видеокарта</p>
+						<div class="price">129 990₽</div>
+					</div>
+					<div class="novelty-card">
+						<div class="discount">NEW</div>
+						<h3>AMD Ryzen 9 9950X</h3>
+						<p>Флагманский процессор</p>
+						<div class="price">74 990₽</div>
+					</div>
+					<div class="novelty-card">
+						<div class="discount">NEW</div>
+						<h3>DDR5 6400MHz</h3>
+						<p>Оперативная память нового поколения</p>
+						<div class="price">18 990₽</div>
+					</div>
+					<div class="novelty-card">
+						<div class="discount">NEW</div>
+						<h3>NVMe SSD 4TB</h3>
+						<p>Сверхбыстрая память</p>
+						<div class="price">25 990₽</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="promo-section">
+				<h2>🔥 Горячие предложения</h2>
+				<div class="promo-grid">
+					<div class="promo-card">
+						<div class="discount">-20%</div>
+						<h3>Игровые видеокарты</h3>
+						<p>RTX 4070, RX 7800 XT</p>
+						<div class="price">от 55 990₽</div>
+					</div>
+					<div class="promo-card">
+						<div class="discount">-15%</div>
+						<h3>Процессоры Intel</h3>
+						<p>Core i7, i9 серии</p>
+						<div class="price">от 32 500₽</div>
+					</div>
+					<div class="promo-card">
+						<div class="discount">Рассрочка 0%</div>
+						<h3>Сборка ПК</h3>
+						<p>12 месяцев без процентов</p>
+						<div class="price">от 90 000₽</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h4>Контакты</h4>
+					<p>📞 +7 (999) 999-99-99</p>
+					<p>✉️ Nekkis@pc-shop.ru</p>
+					<p>📍 Махачкала</p>
+				</div>
+
+				<div class="footer-section">
+					<h4>График работы</h4>
+					<p>Пн-Пт: 9:00 - 21:00</p>
+					<p>Сб-Вс: 10:00 - 20:00</p>
+				</div>
+
+				<div class="footer-section">
+					<h4>Полезные ссылки</h4>
+					<a href="delivery.html">Доставка</a>
+					<a href="warranty.html">Гарантия</a>
+					<a href="returns.html">Возврат</a>
+					<a href="contacts.html">Контакты</a>
+				</div>
+
+				<div class="footer-section">
+					<h4>Соцсети</h4>
+					<div class="social-links">
+						<a href="#">VK</a>
+						<a href="#">Telegram</a>
+						<a href="#">YouTube</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>© 2025 Nekkis PC-Shop. Все права защищены.</p>
+			</div>
+		</footer>
+	</body>
+</html>
