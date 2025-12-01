@@ -1,4 +1,3 @@
-// Функция для обновления отображения корзины
 function updateCartDisplay() {
     const cartItems = document.getElementById('cartItems');
     const totalAmount = document.querySelector('.total-amount');

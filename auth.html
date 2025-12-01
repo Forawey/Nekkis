@@ -1,65 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аутентификация</title>
-    <link rel="icon" href="res/favicon.png" />
-    <link rel="stylesheet" href="auth_style.css">
-    <script src="script.js"></script>
-</head>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Авторизация - Nekkis</title>
+		<link rel="icon" href="res/favicon.png" />
+		<link rel="stylesheet" href="auth_style.css" />
+		<script src="auth_script.js" defer></script>
+	</head>
 
-<body>
-    <div class="container form-section" id="login-section">
-        <h2>Войдите в учетную запись</h2>
-        <form id="login-form" onsubmit="return validateLogin()">
-            <label for="login-input">Логин:</label>
-            <input type="text" id="login-input" name="login" required>
+	<body>
+		<div class="auth-container">
+			<!-- Переключатель вкладок -->
+			<div class="tabs">
+				<button class="tab-btn active" onclick="switchTab('login')">
+					Вход
+				</button>
+				<button class="tab-btn" onclick="switchTab('register')">
+					Регистрация
+				</button>
+			</div>
 
-            <label for="password-input">Пароль:</label>
-            <input type="password" id="password-input" name="password" required>
+			<!-- Контейнер форм -->
+			<div class="forms-container">
+				<!-- Форма входа -->
+				<div class="form-box active" id="login-form">
+					<div class="form-header">
+						<h2>Вход в аккаунт</h2>
+						<p>Введите данные для входа</p>
+					</div>
 
+					<form id="loginForm" onsubmit="return validateLogin(event)">
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">👤</span>
+								<input
+									type="text"
+									id="login-email"
+									name="login-email"
+									placeholder="Логин или Email"
+								/>
+							</div>
+							<div
+								class="error-message"
+								id="login-email-error"
+							></div>
+						</div>
 
-            <button type="submit">Войти</button>
-            <button type="reset">Отменить вход</button>
-        </form>
-    </div>
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">🔒</span>
+								<input
+									type="password"
+									id="login-password"
+									name="login-password"
+									placeholder="Пароль"
+								/>
+								<button
+									type="button"
+									class="toggle-password"
+									onclick="togglePassword('login-password')"
+								>
+									👁️
+								</button>
+							</div>
+							<div
+								class="error-message"
+								id="login-password-error"
+							></div>
+						</div>
 
-    <div class="container form-section" id="register-section">
-        <h2> Пройдите регистрацию</h2>
-        <form id="reg-form" onsubmit="return validateRegister()">
-            <label for="login">Логин:</label>
-            <input type="text" id="reg-login" name="login" required>
+						<div class="form-options">
+							<label class="checkbox-option">
+								<input type="checkbox" id="remember-me" />
+								<span class="checkmark"></span>
+								Запомнить меня
+							</label>
+							<a href="#" class="forgot-link">Забыли пароль?</a>
+						</div>
 
-            <label for="password">Пароль:</label>
-            <input type="password" id="reg-password" name="password" required>
+						<button type="submit" class="submit-btn">Войти</button>
+					</form>
+				</div>
 
-            <label for="email">Почта:</label>
-            <input type="text" id="email" name="email" required>
+				<!-- Форма регистрации -->
+				<div class="form-box" id="register-form">
+					<div class="form-header">
+						<h2>Регистрация</h2>
+						<p>Создайте новый аккаунт</p>
+					</div>
 
-            <label for="city">Выберите ваш город</label>
-            <select name="city" id="city">
-                <option value="a">Москва</option>
-                <option value="b">Махачкала</option>
-                <option value="c">Питер</option>
-                <option value="d">Саратов</option>
+					<form
+						id="registerForm"
+						onsubmit="return validateRegister(event)"
+					>
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">👤</span>
+								<input
+									type="text"
+									id="reg-username"
+									name="reg-username"
+									placeholder="Имя пользователя"
+								/>
+							</div>
+							<div
+								class="error-message"
+								id="reg-username-error"
+							></div>
+						</div>
 
-            </select>
-            </label>
-            <br>
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">✉️</span>
+								<input
+									type="email"
+									id="reg-email"
+									name="reg-email"
+									placeholder="Email"
+								/>
+							</div>
+							<div
+								class="error-message"
+								id="reg-email-error"
+							></div>
+						</div>
 
-            <br>
-            <legend>Ваш пол</legend>
-            <label>
-                <input type="radio" name="gender" value="male" required> Муж
-                <input type="radio" name="gender" value="female" required> Жен
-            </label>
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">🔒</span>
+								<input
+									type="password"
+									id="reg-password"
+									name="reg-password"
+									placeholder="Пароль"
+								/>
+								<button
+									type="button"
+									class="toggle-password"
+									onclick="togglePassword('reg-password')"
+								>
+									👁️
+								</button>
+							</div>
+							<div
+								class="error-message"
+								id="reg-password-error"
+							></div>
+						</div>
 
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">🔒</span>
+								<input
+									type="password"
+									id="reg-confirm-password"
+									name="reg-confirm-password"
+									placeholder="Повторите пароль"
+								/>
+								<button
+									type="button"
+									class="toggle-password"
+									onclick="togglePassword('reg-confirm-password')"
+								>
+									👁️
+								</button>
+							</div>
+							<div
+								class="error-message"
+								id="reg-confirm-password-error"
+							></div>
+						</div>
 
-            <button type="submit">Зарегистрироваться</button>
-            <button type="reset">Отменить регистрацию</button>
-        </form>
-    </div>
-</body>
+						<div class="input-group">
+							<div class="input-with-icon">
+								<span class="input-icon">🏙️</span>
+								<select id="reg-city" name="reg-city">
+									<option value="">Выберите город</option>
+									<option value="moscow">Москва</option>
+									<option value="makhachkala">
+										Махачкала
+									</option>
+									<option value="saint-petersburg">
+										Санкт-Петербург
+									</option>
+									<option value="saratov">Саратов</option>
+								</select>
+							</div>
+							<div
+								class="error-message"
+								id="reg-city-error"
+							></div>
+						</div>
 
+						<div class="input-group">
+							<div class="gender-options">
+								<label class="radio-option">
+									<input
+										type="radio"
+										name="gender"
+										value="male"
+									/>
+									<span class="radio-checkmark"></span>
+									Мужской
+								</label>
+								<label class="radio-option">
+									<input
+										type="radio"
+										name="gender"
+										value="female"
+									/>
+									<span class="radio-checkmark"></span>
+									Женский
+								</label>
+							</div>
+							<div class="error-message" id="gender-error"></div>
+						</div>
+
+						<button type="submit" class="submit-btn">
+							Зарегистрироваться
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -1,13 +1,3 @@
-function validateLogin() {
-	window.location.href = "index.html";
-	return false;
-}
-
-function validateRegister() {
-	window.location.href = "index.html";
-	return false;
-}
-
 function scrollToSection() {
     const hash = window.location.hash;
 
