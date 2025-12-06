@@ -303,3 +303,34 @@ body {
 .input-error {
 	border-color: #ff4444 !important;
 }
+
+.home-btn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+    background: white;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgb(219, 178, 103);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.home-btn:hover {
+    background: rgb(219, 178, 103);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(219, 178, 103, 0.3);
+}
+
+.tabs {
+    padding-top: 10px;
+}
